@@ -1,0 +1,16 @@
+pypdf
+langchain 
+langchain-openai 
+langchain-experimental 
+langchain-community 
+fastapi 
+uvicorn 
+openai 
+python-dotenv 
+faiss-cpu 
+python-multipart 
+langchainhub 
+chromadb
+requests
+beautifulsoup4
+urllib3

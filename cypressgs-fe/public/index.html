@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chatbot</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="chatbox">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="./images/cypress_logo.jpg" alt="image">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">AI Assistant</h4>
+                            <p class="chatbox__description--header">Cypress Your AI-Powered Assistant.</p>
+                        </div>
+                        <button type="button" class="expand-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3.42857 15.4286H0V24H8.57143V20.5714H3.42857V15.4286ZM0 8.57143H3.42857V3.42857H8.57143V0H0V8.57143ZM20.5714 20.5714H15.4286V24H24V15.4286H20.5714V20.5714ZM15.4286 0V3.42857H20.5714V8.57143H24V0H15.4286Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="remove-expand">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M0 19.3571H5.14286V24.5H8.57143V15.9286H0V19.3571ZM5.14286 5.64286H0V9.07143H8.57143V0.5H5.14286V5.64286ZM15.4286 24.5H18.8571V19.3571H24V15.9286H15.4286V24.5ZM18.8571 5.64286V0.5H15.4286V9.07143H24V5.64286H18.8571Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="chatbox__messages">
+                        <div></div>
+                    </div>
+                    <div class="chatbox__footer">
+                        <div class="footer-inside">
+                            <button type="button" class="chatbox__reload">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                                    <path d="M17.7382 7.18096L15.0506 10.541C14.8281 10.8191 14.5086 10.9627 14.1868 10.9627C13.9323 10.9627 13.6765 10.8729 13.4659 10.6891L10.2503 7.88083C9.77356 7.46448 9.7101 6.72313 10.1086 6.22501C10.507 5.72689 11.2165 5.66054 11.6932 6.07689L13.0118 7.22842C12.6506 4.47731 10.3868 2.35099 7.65621 2.35099C4.67521 2.35103 2.25 4.88514 2.25 8C2.25 11.1149 4.67521 13.649 7.65621 13.649C8.27752 13.649 8.78121 14.1753 8.78121 14.8245C8.78121 15.4737 8.27752 16 7.65621 16C5.61117 16 3.68852 15.1678 2.24247 13.6569C0.796393 12.1459 0 10.1369 0 8C0 5.86314 0.796393 3.85414 2.24247 2.34313C3.68852 0.832154 5.61117 0 7.65621 0C9.70124 0 11.6239 0.832154 13.07 2.34313C14.2132 3.5376 14.9498 5.04343 15.2085 6.67751L16.0118 5.67322C16.4102 5.17509 17.1197 5.10882 17.5964 5.5251C18.0732 5.94149 18.1366 6.68284 17.7382 7.18096Z" fill="white"/>
+                                </svg>
+                            </button>
+                            <input type="text" class="text-color" placeholder="Write a message...">
+                            <button class="chatbox__send--footer send__button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7541 23.6165C14.1497 23.8602 14.6036 23.9927 15.068 24L15.3379 23.9887C15.8469 23.9449 16.3318 23.7517 16.7317 23.4333C17.1317 23.1148 17.4289 22.6853 17.5863 22.1984L23.8483 3.52989C24.015 3.05874 24.045 2.54992 23.9349 2.06237C23.8303 1.59903 23.6032 1.17291 23.278 0.828358C23.2563 0.800554 23.2328 0.773952 23.2076 0.74873C23.175 0.716041 23.14 0.686203 23.1031 0.659376C22.7721 0.367678 22.3726 0.16298 21.9408 0.0651746C21.454 -0.0450858 20.946 -0.0149866 20.4756 0.151987L1.84714 6.37859C1.35359 6.53282 0.916358 6.82929 0.590068 7.23097C0.263777 7.63264 0.0628954 8.1217 0.0125192 8.63705C-0.037857 9.15241 0.0645059 9.6712 0.306819 10.1286C0.549133 10.5861 0.920654 10.9618 1.37497 11.209L8.52505 15.0711C8.68864 15.1564 8.82208 15.2901 8.90728 15.4539L12.8196 22.6151C13.0356 23.0269 13.3584 23.3728 13.7541 23.6165ZM20.9651 1.75958C20.9631 1.76042 20.961 1.76127 20.959 1.76212L2.33056 7.98873C2.15297 8.04591 1.99626 8.1545 1.88022 8.30078C1.76417 8.44706 1.69398 8.62449 1.67851 8.81068C1.66173 8.99465 1.69976 9.17947 1.7878 9.3418C1.87584 9.50413 2.00995 9.63668 2.17317 9.72272L9.24192 13.5409L20.9651 1.75958ZM22.198 2.99505L10.435 14.7364L14.2136 21.8156C14.2995 21.9791 14.4319 22.1134 14.594 22.2016C14.756 22.2898 14.9406 22.3279 15.1243 22.311C15.3102 22.2955 15.4873 22.2253 15.6334 22.109C15.7794 21.9928 15.8878 21.8359 15.9449 21.658L22.1956 3.00069C22.1964 2.99881 22.1972 2.99693 22.198 2.99505Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__button">
+                    <button><img src="./images/chat-icon.png" /></button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
